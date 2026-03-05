@@ -7,17 +7,17 @@
 </head>
 <body>
     <?php
-        $nbrTea = 4 ;
+        $nbrTea = 10 ;
         $studentOrNot = "student";
         $priceTea = 10 ;
         if ($studentOrNot == "student" && $nbrTea >= 5) {
-            $totalPrice = ($nbrTea * $priceTea) * 0.8 - (1 * $nbrTea);
+            $totalPrice = ($nbrTea * $priceTea) * 0.8 - $nbrTea;
         }
         elseif ($studentOrNot == "student" && $nbrTea < 5){
             $totalPrice = ($nbrTea * $priceTea) * 0.8 ;
         }
         elseif ($studentOrNot == "notStudent" && $nbrTea >= 5){
-            $totalPrice = ($nbrTea * $priceTea) - (1 * $nbrTea);
+            $totalPrice = ($nbrTea * $priceTea) - $nbrTea;
         }
         else {
             $totalPrice = ($nbrTea * $priceTea);
