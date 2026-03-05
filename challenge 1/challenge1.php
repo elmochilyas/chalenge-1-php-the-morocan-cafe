@@ -7,9 +7,9 @@
 </head>
 <body>
     <?php
-        $nbrTea = 5 ;
-        $studentOrNot = "notStudent";
-        $priceTea = 20 ;
+        $nbrTea = 4 ;
+        $studentOrNot = "student";
+        $priceTea = 10 ;
         if ($studentOrNot == "student" && $nbrTea >= 5) {
             $totalPrice = ($nbrTea * $priceTea) * 0.8 - (1 * $nbrTea);
         }
